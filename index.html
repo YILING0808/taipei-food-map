@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Taipei Bites 台北美食收藏，探索值得收進口袋的台北正餐、咖啡廳與甜點。">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Taipei Bites — 台北美食收藏</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="restaurants.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#discover">跳到美食收藏</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top" aria-label="Taipei Bites 回首頁">TAIPEI<span>BITES</span><i aria-hidden="true">.</i></a>
+      <nav class="nav-links" aria-label="主選單"><a href="#discover">探索店家</a><a href="#about">關於計畫</a></nav>
+      <a href="#discover" class="nav-action">查看收藏 <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="tiny-line"></span> YOUR TAIPEI FOOD JOURNAL</div>
+        <h1 id="hero-title">好吃的台北，<br>值得<span class="serif-accent">慢慢收藏。</span></h1>
+        <p class="hero-intro">從熟悉的街角小吃到週末的咖啡時光，<br class="desktop-break">用一份有溫度的口袋名單，重新認識這座城市。</p>
+        <div class="hero-actions"><a class="dark-button" href="#discover">開始探索美食 <span>↗</span></a><span class="hero-side-note">01 / TAIPEI EDITION</span></div>
+      </div>
+      <div class="hero-photo" role="img" aria-label="餐桌上的精緻餐點與日常美食氛圍">
+        <div class="hero-photo-label"><small>CURATED IN TAIPEI</small><strong>好好吃飯，<br>就是日常的浪漫。</strong></div>
+        <span class="photo-credit">A LITTLE GUIDE TO THE CITY</span>
+      </div>
+      <div class="vertical-note" aria-hidden="true">EAT WELL · LIVE SLOW · TAIPEI</div>
+    </section>
+
+    <section class="intro-line container" aria-label="網站特色"><span>台北風味日記</span><span class="intro-divider"></span><span>正餐・咖啡・甜點</span><span class="intro-divider"></span><span>持續更新的小小收藏</span></section>
+
+    <section id="discover" class="collection container" aria-labelledby="collection-title">
+      <div class="collection-heading"><div><div class="eyebrow eyebrow-accent">01 / THE COLLECTION</div><h2 id="collection-title">口袋<span class="serif-accent">美食清單</span></h2><p>有些美味，值得特地繞點路。</p></div><div class="collection-index"><strong id="result-count">06</strong><span>PLACES TO EXPLORE</span></div></div>
+      <div class="toolbar"><div class="filters" role="group" aria-label="美食分類"><button class="filter is-active" type="button" data-category="全部" aria-pressed="true">全部收藏</button><button class="filter" type="button" data-category="正餐" aria-pressed="false">正餐</button><button class="filter" type="button" data-category="咖啡廳" aria-pressed="false">咖啡廳</button><button class="filter" type="button" data-category="甜點" aria-pressed="false">甜點</button></div><label class="search-field"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><span class="sr-only">搜尋餐廳、地區或品項</span><input id="search-input" type="search" placeholder="搜尋店家、地區..." autocomplete="off"></label></div>
+      <div id="restaurant-grid" class="restaurant-grid" aria-live="polite"></div>
+      <div id="empty-state" class="empty-state" hidden><strong>還沒有找到符合的店家</strong><p>試試別的關鍵字，或回到全部收藏。</p><button type="button" id="reset-button">清除篩選 ↗</button></div>
+    </section>
+
+    <section class="closing-section" id="about"><div class="container closing-inner"><div><div class="eyebrow light-eyebrow">ABOUT THE PROJECT</div><h2>關於這份<span class="serif-accent">收藏</span></h2></div><div><p>我們把台北的餐桌風景整理成一份簡單、好逛的清單。從正餐、咖啡到甜點，透過固定的資料格式，讓這份收藏可以一直延續下去。</p><small>這是一份課程展示用的編輯型選店清單，並非親自到訪評測；店家資料可能更新，請以官方與地圖最新資訊為準。</small></div><a class="closing-link" href="#top" aria-label="返回首頁">↑</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="wordmark" href="#top">TAIPEI<span>BITES</span><i>.</i></a><span>GOOD FOOD, GOOD DAYS. © 2026</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+</body>
+</html>
